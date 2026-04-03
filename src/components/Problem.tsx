@@ -1,23 +1,26 @@
 "use client";
 
-import { PhoneOff, TrendingDown, UserX } from "lucide-react";
+import { Clock, Layers, ShieldAlert } from "lucide-react";
 import { motion } from "framer-motion";
 
-const stats = [
+const painPoints = [
   {
-    icon: PhoneOff,
-    stat: "62%",
-    label: "of calls to small businesses go unanswered",
+    icon: Clock,
+    title: "Manual Work is Eating Your Time",
+    description:
+      "Your team spends hours on repetitive tasks that AI could handle in seconds — data entry, lead follow-up, document review, scheduling.",
   },
   {
-    icon: UserX,
-    stat: "85%",
-    label: "of callers won't leave a voicemail",
+    icon: Layers,
+    title: "Off-the-Shelf Tools Don't Fit",
+    description:
+      "Generic SaaS products force you into their workflow. You need systems designed around how your business actually operates.",
   },
   {
-    icon: TrendingDown,
-    stat: "$1,000+",
-    label: "lost per week from missed calls",
+    icon: ShieldAlert,
+    title: "Your Competitors are Moving Faster",
+    description:
+      "Businesses that adopt AI early capture more leads, serve clients faster, and operate at a fraction of the overhead.",
   },
 ];
 
@@ -32,31 +35,33 @@ export default function Problem() {
           className="text-center mb-16"
         >
           <h2 className="text-3xl sm:text-4xl font-bold mb-4">
-            Every Missed Call Is a Customer
+            Your Business Has Unique Problems.
             <br />
-            <span className="text-red-400">Calling Your Competitor</span>
+            <span className="text-accent-light">You Deserve Unique Solutions.</span>
           </h2>
           <p className="text-muted max-w-xl mx-auto">
-            When you&apos;re on a job site, with a client, or simply busy — your
-            phone rings and nobody picks up. Here&apos;s what happens next:
+            Most businesses know AI can help — they just don&apos;t know where to
+            start or who to trust to build it right.
           </p>
         </motion.div>
 
         <div className="grid md:grid-cols-3 gap-6">
-          {stats.map((s, i) => (
+          {painPoints.map((p, i) => (
             <motion.div
               key={i}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.1 }}
-              className="text-center p-8 rounded-2xl bg-card-bg border border-card-border"
+              className="p-8 rounded-2xl bg-card-bg border border-card-border"
             >
-              <div className="w-12 h-12 rounded-xl bg-red-500/10 flex items-center justify-center mx-auto mb-4">
-                <s.icon className="w-6 h-6 text-red-400" />
+              <div className="w-12 h-12 rounded-xl bg-accent/10 flex items-center justify-center mb-5">
+                <p.icon className="w-6 h-6 text-accent-light" />
               </div>
-              <p className="text-4xl font-bold mb-2">{s.stat}</p>
-              <p className="text-muted text-sm">{s.label}</p>
+              <h3 className="text-lg font-bold mb-2">{p.title}</h3>
+              <p className="text-muted text-sm leading-relaxed">
+                {p.description}
+              </p>
             </motion.div>
           ))}
         </div>

@@ -4,31 +4,31 @@ import {
   Wrench,
   Home,
   Zap as ZapIcon,
-  TreePine,
   Scissors,
   Scale,
   Stethoscope,
   SmilePlus,
-  Bug,
-  Key,
   Truck,
-  SprayCan,
+  Building2,
+  ShoppingBag,
+  GraduationCap,
+  Landmark,
 } from "lucide-react";
 import { motion } from "framer-motion";
 
 const industries = [
-  { icon: Wrench, label: "Plumbing" },
-  { icon: Home, label: "Roofing" },
-  { icon: ZapIcon, label: "Electricians" },
-  { icon: TreePine, label: "Tree Service" },
-  { icon: Scissors, label: "Salons & Spas" },
   { icon: Scale, label: "Law Firms" },
-  { icon: Stethoscope, label: "Medical Clinics" },
-  { icon: SmilePlus, label: "Dental Offices" },
-  { icon: Bug, label: "Pest Control" },
-  { icon: Key, label: "Locksmiths" },
+  { icon: Stethoscope, label: "Healthcare" },
+  { icon: SmilePlus, label: "Dental" },
+  { icon: Home, label: "Real Estate" },
+  { icon: Wrench, label: "Home Services" },
   { icon: Truck, label: "HVAC" },
-  { icon: SprayCan, label: "Cleaning Services" },
+  { icon: ZapIcon, label: "Electricians" },
+  { icon: Scissors, label: "Salons & Spas" },
+  { icon: Building2, label: "Agencies" },
+  { icon: ShoppingBag, label: "E-Commerce" },
+  { icon: GraduationCap, label: "Education" },
+  { icon: Landmark, label: "Finance" },
 ];
 
 export default function Industries() {
@@ -45,13 +45,13 @@ export default function Industries() {
             Industries
           </p>
           <h2 className="text-3xl sm:text-4xl font-bold mb-4">
-            Built for Businesses That Can&apos;t
+            We Work With Businesses
             <br />
-            Always Answer the Phone
+            Ready to Move Faster
           </h2>
           <p className="text-muted max-w-xl mx-auto">
-            If your hands are full, your equipment is loud, or you&apos;re face-to-face
-            with a client — we&apos;ve got your back.
+            Whether you&apos;re a solo practice or a growing team, we build AI
+            systems that fit your industry and scale with you.
           </p>
         </motion.div>
 

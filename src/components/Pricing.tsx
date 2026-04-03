@@ -7,49 +7,50 @@ const BOOKING_URL = "https://calendly.com";
 
 const tiers = [
   {
-    name: "Starter",
-    price: "$97",
-    period: "/mo",
-    description: "Perfect for solo operators who want to stop losing leads.",
+    name: "Single Project",
+    price: "From $1,500",
+    period: "",
+    description: "A focused build for one specific problem or workflow.",
     features: [
-      "Missed-call auto text-back",
-      "Custom business greeting",
-      "Lead notifications to your phone",
-      "Business hours configuration",
-      "Monthly performance report",
+      "Discovery call & requirements gathering",
+      "Custom-built AI system or tool",
+      "Deployment & handoff",
+      "You own the source code",
+      "30 days of post-launch support",
     ],
     cta: "Get Started",
     featured: false,
   },
   {
-    name: "Professional",
-    price: "$297",
+    name: "Growth Partner",
+    price: "Custom",
     period: "/mo",
-    description: "AI-powered conversations that qualify and book leads for you.",
+    description:
+      "Ongoing development, support, and new features as your business scales.",
     features: [
-      "Everything in Starter",
-      "Conversational AI agent",
-      "FAQ & service-based responses",
-      "Automated lead qualification",
-      "Calendar booking integration",
-      "Priority support",
+      "Everything in Single Project",
+      "Dedicated monthly dev hours",
+      "Priority support & bug fixes",
+      "New features & iterations",
+      "Performance monitoring",
+      "Strategy & roadmap sessions",
     ],
-    cta: "Book a Demo",
+    cta: "Book a Call",
     featured: true,
   },
   {
     name: "Enterprise",
-    price: "Custom",
+    price: "Let's Talk",
     period: "",
-    description: "For law firms, clinics, and multi-location businesses.",
+    description:
+      "For multi-location businesses or complex compliance environments.",
     features: [
-      "Everything in Professional",
-      "Document Intelligence (RAG)",
-      "Multi-location support",
-      "CRM & EHR integrations",
-      "Dedicated account manager",
-      "Custom AI training",
-      "Private, compliant infrastructure",
+      "Everything in Growth Partner",
+      "Multi-system architecture",
+      "Private infrastructure & hosting",
+      "Compliance & security review",
+      "Team training & onboarding",
+      "SLA & dedicated account manager",
     ],
     cta: "Contact Us",
     featured: false,
@@ -70,11 +71,11 @@ export default function Pricing() {
             Pricing
           </p>
           <h2 className="text-3xl sm:text-4xl font-bold mb-4">
-            Simple Pricing. Massive ROI.
+            Flexible Pricing for Every Stage
           </h2>
           <p className="text-muted max-w-xl mx-auto">
-            One missed call could cost you $500 or more. Our system pays for
-            itself in a single booking.
+            Whether you need a single system or a long-term technology partner,
+            we have a plan that fits.
           </p>
         </motion.div>
 
@@ -100,7 +101,7 @@ export default function Pricing() {
 
               <h3 className="text-lg font-bold mb-1">{tier.name}</h3>
               <div className="flex items-baseline gap-1 mb-3">
-                <span className="text-4xl font-bold">{tier.price}</span>
+                <span className="text-3xl font-bold">{tier.price}</span>
                 {tier.period && (
                   <span className="text-muted text-sm">{tier.period}</span>
                 )}

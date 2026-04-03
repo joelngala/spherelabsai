@@ -18,13 +18,13 @@ export default function CTA() {
           viewport={{ once: true }}
         >
           <h2 className="text-3xl sm:text-5xl font-bold mb-6 leading-tight">
-            Ready to Stop Losing
+            Let&apos;s Build Something
             <br />
-            <span className="gradient-text">Revenue to Voicemail?</span>
+            <span className="gradient-text">That Actually Works</span>
           </h2>
           <p className="text-muted text-lg mb-10 max-w-xl mx-auto">
-            Book a free 15-minute demo. We&apos;ll show you exactly how many leads
-            you&apos;re missing — and how our AI captures them automatically.
+            Book a free consultation. Tell us what&apos;s slowing your business
+            down, and we&apos;ll show you exactly how a custom AI system can fix it.
           </p>
           <a
             href={BOOKING_URL}
@@ -32,11 +32,11 @@ export default function CTA() {
             rel="noopener noreferrer"
             className="relative group inline-flex items-center gap-2 px-10 py-5 rounded-full bg-accent hover:bg-accent-light text-white font-semibold text-lg transition-all pulse-ring"
           >
-            Book Your Free Demo
+            Book Your Free Consultation
             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
           </a>
           <p className="text-muted text-sm mt-6">
-            No contracts. No setup fees on your first month. Cancel anytime.
+            No commitment. No pressure. Just a conversation about what&apos;s possible.
           </p>
         </motion.div>
       </div>

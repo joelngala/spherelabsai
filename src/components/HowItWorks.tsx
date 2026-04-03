@@ -1,35 +1,44 @@
 "use client";
 
-import { PhoneMissed, Bot, CalendarCheck, ArrowDown } from "lucide-react";
+import { MessageCircle, Pencil, Rocket, Headphones, ArrowDown } from "lucide-react";
 import { motion } from "framer-motion";
 
 const steps = [
   {
-    icon: PhoneMissed,
+    icon: MessageCircle,
     step: "01",
-    title: "A Customer Calls",
+    title: "Discovery Call",
     description:
-      "You're busy on a job, with a patient, or in a meeting. The call goes unanswered.",
-    color: "text-red-400",
-    bg: "bg-red-500/10",
-  },
-  {
-    icon: Bot,
-    step: "02",
-    title: "AI Engages Instantly",
-    description:
-      "Within seconds, our AI texts them back, answers their questions, and qualifies the lead — automatically.",
+      "We learn about your business, your bottlenecks, and what success looks like. No jargon, no pressure — just a conversation about where AI can actually move the needle.",
     color: "text-accent-light",
     bg: "bg-accent/10",
   },
   {
-    icon: CalendarCheck,
-    step: "03",
-    title: "Appointment Booked",
+    icon: Pencil,
+    step: "02",
+    title: "Custom Design & Build",
     description:
-      "The customer is booked on your calendar before they can dial your competitor. You see it all in your dashboard.",
+      "We architect a solution tailored to your workflow and build it from the ground up. You get updates throughout and can give feedback at every stage.",
+    color: "text-violet-400",
+    bg: "bg-violet-500/10",
+  },
+  {
+    icon: Rocket,
+    step: "03",
+    title: "Launch & Deliver",
+    description:
+      "We deploy your system, walk your team through it, and make sure everything runs smoothly. You own the code — no lock-in, no surprises.",
     color: "text-green-400",
     bg: "bg-green-500/10",
+  },
+  {
+    icon: Headphones,
+    step: "04",
+    title: "Ongoing Support",
+    description:
+      "Need updates, new features, or ongoing maintenance? We offer flexible retainers so your system grows as your business grows.",
+    color: "text-amber-400",
+    bg: "bg-amber-500/10",
   },
 ];
 
@@ -47,7 +56,7 @@ export default function HowItWorks() {
             How It Works
           </p>
           <h2 className="text-3xl sm:text-4xl font-bold">
-            Three Steps. Zero Missed Leads.
+            From Idea to Deployed System
           </h2>
         </motion.div>
 
@@ -58,10 +67,12 @@ export default function HowItWorks() {
                 initial={{ opacity: 0, x: -20 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
-                transition={{ delay: i * 0.15 }}
+                transition={{ delay: i * 0.12 }}
                 className="flex items-start gap-6 p-6 rounded-2xl bg-card-bg border border-card-border"
               >
-                <div className={`w-14 h-14 rounded-xl ${s.bg} flex items-center justify-center shrink-0`}>
+                <div
+                  className={`w-14 h-14 rounded-xl ${s.bg} flex items-center justify-center shrink-0`}
+                >
                   <s.icon className={`w-7 h-7 ${s.color}`} />
                 </div>
                 <div>

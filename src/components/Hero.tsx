@@ -1,9 +1,9 @@
 "use client";
 
-import { ArrowRight, Phone, MessageSquare, CalendarCheck } from "lucide-react";
+import { ArrowRight, Sparkles } from "lucide-react";
 import { motion } from "framer-motion";
 
-const BOOKING_URL = "https://calendly.com"; // Replace with your Calendly link
+const BOOKING_URL = "https://calendly.com";
 
 export default function Hero() {
   return (
@@ -21,8 +21,8 @@ export default function Hero() {
           transition={{ duration: 0.5 }}
           className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-card-border bg-card-bg/50 backdrop-blur-sm text-sm text-muted mb-8"
         >
-          <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
-          Serving Tampa Bay Businesses
+          <Sparkles className="w-3.5 h-3.5 text-accent-light" />
+          Custom AI Systems for Your Business
         </motion.div>
 
         {/* Headline */}
@@ -32,9 +32,9 @@ export default function Hero() {
           transition={{ duration: 0.5, delay: 0.1 }}
           className="text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight leading-[1.1] mb-6"
         >
-          Stop Losing Customers
+          We Build AI That
           <br />
-          <span className="gradient-text">to Voicemail</span>
+          <span className="gradient-text">Runs Your Business</span>
         </motion.h1>
 
         {/* Subline */}
@@ -44,9 +44,10 @@ export default function Hero() {
           transition={{ duration: 0.5, delay: 0.2 }}
           className="text-lg sm:text-xl text-muted max-w-2xl mx-auto mb-10 leading-relaxed"
         >
-          We build AI systems that instantly engage missed callers, qualify
-          leads, and book appointments on your calendar &mdash; so every call
-          turns into revenue, not a lost opportunity.
+          SphereLabs designs and deploys custom AI systems tailored to your
+          exact workflow &mdash; from intelligent automation to data-driven
+          dashboards. No templates. No one-size-fits-all. Just solutions
+          built around the way you work.
         </motion.p>
 
         {/* CTAs */}
@@ -62,37 +63,32 @@ export default function Hero() {
             rel="noopener noreferrer"
             className="relative group inline-flex items-center gap-2 px-8 py-4 rounded-full bg-accent hover:bg-accent-light text-white font-semibold text-lg transition-all pulse-ring"
           >
-            Book a Free Demo
+            Book a Free Consultation
             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
           </a>
           <a
-            href="#how-it-works"
+            href="#projects"
             className="inline-flex items-center gap-2 px-8 py-4 rounded-full border border-card-border hover:border-accent/50 text-muted hover:text-foreground font-medium transition-all"
           >
-            See How It Works
+            See Our Work
           </a>
         </motion.div>
 
-        {/* Mini visual: the flow */}
+        {/* Trust signals */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.5 }}
-          className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-8"
+          className="flex flex-col sm:flex-row items-center justify-center gap-6 sm:gap-10 text-sm text-muted"
         >
           {[
-            { icon: Phone, label: "Customer calls", color: "text-red-400" },
-            { icon: MessageSquare, label: "AI texts back instantly", color: "text-accent-light" },
-            { icon: CalendarCheck, label: "Appointment booked", color: "text-green-400" },
-          ].map((step, i) => (
-            <div key={i} className="flex items-center gap-4">
-              <div className="flex items-center gap-3 px-5 py-3 rounded-2xl bg-card-bg/60 backdrop-blur-sm border border-card-border">
-                <step.icon className={`w-5 h-5 ${step.color}`} />
-                <span className="text-sm font-medium">{step.label}</span>
-              </div>
-              {i < 2 && (
-                <ArrowRight className="hidden sm:block w-4 h-4 text-muted" />
-              )}
+            "Fully Custom-Built",
+            "You Own the Code",
+            "Tampa Bay Based",
+          ].map((item, i) => (
+            <div key={i} className="flex items-center gap-2">
+              <span className="w-1.5 h-1.5 rounded-full bg-accent-light" />
+              {item}
             </div>
           ))}
         </motion.div>
