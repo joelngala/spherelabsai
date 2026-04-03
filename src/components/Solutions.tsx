@@ -18,35 +18,35 @@ const projects = [
     icon: MessageSquareText,
     title: "AI Receptionist & Lead Capture",
     description:
-      "An AI agent that instantly responds to missed calls via text, qualifies leads through natural conversation, and books appointments directly on your calendar.",
+      "A smart assistant that catches missed calls for your front desk — texting customers back, answering basic questions, and getting them on the calendar while your team handles in-person clients.",
     tags: ["Twilio", "AI Agent", "Calendar Integration"],
   },
   {
     icon: FileSearch,
     title: "Document Intelligence Platform",
     description:
-      "Upload hundreds of pages of contracts, case files, or records. Ask questions across all documents and get instant, sourced answers — no page limits.",
+      "Helps your team search through hundreds of pages in seconds instead of hours. Ask questions in plain English, get sourced answers — like giving your paralegal a photographic memory.",
     tags: ["RAG", "Vector Search", "Multi-Document"],
   },
   {
     icon: LayoutDashboard,
     title: "Custom Business Dashboards",
     description:
-      "Real-time dashboards that pull data from your systems and give you a clear picture of your operations — patients, projects, KPIs, whatever matters to you.",
+      "Give your team a clear, real-time view of what matters — patients, projects, KPIs — so they can make better decisions without digging through spreadsheets.",
     tags: ["React", "Real-Time Data", "Custom UI"],
   },
   {
     icon: Bot,
     title: "AI-Powered Client Intake",
     description:
-      "Automated intake systems for law firms, clinics, and service businesses that qualify leads, collect information, and route them to the right person.",
+      "Supports your front desk by collecting client information and qualifying leads before they reach your team — so your staff spends time on real cases, not phone tag.",
     tags: ["Compliance-Safe", "Lead Qualification", "CRM Integration"],
   },
   {
     icon: Workflow,
     title: "Workflow Automation",
     description:
-      "Connect your tools and eliminate repetitive tasks. From automated follow-ups to data syncing between platforms — we build the glue that makes your stack work together.",
+      "Connect the tools your team already uses and cut out the copy-paste. Automated follow-ups, data syncing, and handoffs — so nothing falls through the cracks.",
     tags: ["API Integration", "Automation", "Custom Logic"],
   },
   {
@@ -72,12 +72,11 @@ export default function Solutions() {
             What We Build
           </p>
           <h2 className="text-3xl sm:text-4xl font-bold mb-4">
-            Custom AI Systems, Built for You
+            Tools That Make Your Team Unstoppable
           </h2>
           <p className="text-muted max-w-2xl mx-auto">
-            Every business is different. Here are examples of the types of systems
-            we design, build, and deploy — each one tailored to the client&apos;s
-            exact needs.
+            We build tools that work alongside your team — handling the
+            repetitive stuff so they can focus on the work that matters.
           </p>
         </motion.div>
 

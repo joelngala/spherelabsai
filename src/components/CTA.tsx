@@ -18,13 +18,13 @@ export default function CTA() {
           viewport={{ once: true }}
         >
           <h2 className="text-3xl sm:text-5xl font-bold mb-6 leading-tight">
-            Let&apos;s Build Something
+            Ready to Give Your Team
             <br />
-            <span className="gradient-text">That Actually Works</span>
+            <span className="gradient-text">an Unfair Advantage?</span>
           </h2>
           <p className="text-muted text-lg mb-10 max-w-xl mx-auto">
-            Book a free consultation. Tell us what&apos;s slowing your business
-            down, and we&apos;ll show you exactly how a custom AI system can fix it.
+            Book a free consultation. Tell us where your team is spending
+            too much time, and we&apos;ll show you how to get those hours back.
           </p>
           <a
             href={BOOKING_URL}

@@ -32,9 +32,9 @@ export default function Hero() {
           transition={{ duration: 0.5, delay: 0.1 }}
           className="text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight leading-[1.1] mb-6"
         >
-          We Build AI That
+          AI That Empowers
           <br />
-          <span className="gradient-text">Runs Your Business</span>
+          <span className="gradient-text">Your Team to Do More</span>
         </motion.h1>
 
         {/* Subline */}
@@ -44,10 +44,9 @@ export default function Hero() {
           transition={{ duration: 0.5, delay: 0.2 }}
           className="text-lg sm:text-xl text-muted max-w-2xl mx-auto mb-10 leading-relaxed"
         >
-          SphereLabs designs and deploys custom AI systems tailored to your
-          exact workflow &mdash; from intelligent automation to data-driven
-          dashboards. No templates. No one-size-fits-all. Just solutions
-          built around the way you work.
+          We build custom AI tools that give your team superpowers &mdash;
+          speeding up the tedious work, surfacing the right information
+          faster, and freeing your people to focus on what they do best.
         </motion.p>
 
         {/* CTAs */}

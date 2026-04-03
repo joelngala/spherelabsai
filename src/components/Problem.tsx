@@ -6,21 +6,21 @@ import { motion } from "framer-motion";
 const painPoints = [
   {
     icon: Clock,
-    title: "Manual Work is Eating Your Time",
+    title: "Your Team's Time is Too Valuable",
     description:
-      "Your team spends hours on repetitive tasks that AI could handle in seconds — data entry, lead follow-up, document review, scheduling.",
+      "Hours spent on data entry, document review, and scheduling are hours not spent on clients. AI handles the busywork so your people can focus on high-value work.",
   },
   {
     icon: Layers,
     title: "Off-the-Shelf Tools Don't Fit",
     description:
-      "Generic SaaS products force you into their workflow. You need systems designed around how your business actually operates.",
+      "Generic software forces your team into someone else's workflow. You need tools designed around how your business actually operates.",
   },
   {
     icon: ShieldAlert,
-    title: "Your Competitors are Moving Faster",
+    title: "You Shouldn't Need a Tech Team to Use AI",
     description:
-      "Businesses that adopt AI early capture more leads, serve clients faster, and operate at a fraction of the overhead.",
+      "AI should feel like a helpful teammate, not a complicated project. We build tools your staff can use on day one — no training manuals required.",
   },
 ];
 
@@ -35,13 +35,13 @@ export default function Problem() {
           className="text-center mb-16"
         >
           <h2 className="text-3xl sm:text-4xl font-bold mb-4">
-            Your Business Has Unique Problems.
+            Your Team is Great.
             <br />
-            <span className="text-accent-light">You Deserve Unique Solutions.</span>
+            <span className="text-accent-light">We Just Make Them Faster.</span>
           </h2>
           <p className="text-muted max-w-xl mx-auto">
-            Most businesses know AI can help — they just don&apos;t know where to
-            start or who to trust to build it right.
+            AI doesn&apos;t replace your team — it removes the bottlenecks
+            that slow them down.
           </p>
         </motion.div>
 

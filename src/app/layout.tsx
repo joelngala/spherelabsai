@@ -8,9 +8,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "SphereLabs AI | Custom AI Systems for Your Business",
+  title: "SphereLabs AI | AI That Empowers Your Team",
   description:
-    "We design and deploy custom AI systems tailored to your exact workflow — from intelligent automation to data-driven dashboards. Tampa Bay based.",
+    "We build custom AI tools that speed up your team's workflow — from document intelligence to automated intake. Tampa Bay based.",
 };
 
 export default function RootLayout({
