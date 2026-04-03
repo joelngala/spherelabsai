@@ -3,7 +3,7 @@
 import { Check, ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
 
-const BOOKING_URL = "https://calendly.com";
+const BOOKING_URL = "https://calendly.com/spherelabsai/30min";
 
 const tiers = [
   {

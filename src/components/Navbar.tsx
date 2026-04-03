@@ -10,7 +10,7 @@ const links = [
   { label: "Pricing", href: "#pricing" },
 ];
 
-const BOOKING_URL = "https://calendly.com"; // Replace with your Calendly link
+const BOOKING_URL = "https://calendly.com/spherelabsai/30min";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
