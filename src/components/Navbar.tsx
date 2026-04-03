@@ -4,9 +4,9 @@ import { useState, useEffect } from "react";
 import { Menu, X, Zap } from "lucide-react";
 
 const links = [
+  { label: "Live Demo", href: "#demo" },
   { label: "What We Build", href: "#projects" },
   { label: "How It Works", href: "#how-it-works" },
-  { label: "Industries", href: "#industries" },
   { label: "Pricing", href: "#pricing" },
 ];
 
